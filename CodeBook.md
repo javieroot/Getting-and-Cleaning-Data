@@ -39,4 +39,4 @@ treated here.
 The following diagram summarizes how the data is organized between files 
 provided:
 
-![Summary chart](images/diagrama.jpg, "Summary chart")
+![Summary chart](images/diagrama.jpg)
