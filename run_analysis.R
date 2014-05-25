@@ -1,3 +1,33 @@
+# > sessionInfo()
+# R version 3.0.2 (2013-09-25)
+# Platform: x86_64-redhat-linux-gnu (64-bit)
+# 
+# locale:
+#  [1] LC_CTYPE=es_MX.UTF-8      LC_NUMERIC=C              LC_TIME=es_MX.utf8       
+#  [4] LC_COLLATE=es_MX.UTF-8    LC_MONETARY=es_MX.utf8    LC_MESSAGES=es_MX.UTF-8  
+#  [7] LC_PAPER=es_MX.utf8       LC_NAME=C                 LC_ADDRESS=C             
+# [10] LC_TELEPHONE=C            LC_MEASUREMENT=es_MX.utf8 LC_IDENTIFICATION=C      
+# 
+# attached base packages:
+#   [1] stats     graphics  grDevices utils     datasets  methods   base     
+# 
+# other attached packages:
+#   [1] plyr_1.8
+# 
+# loaded via a namespace (and not attached):
+#   [1] tools_3.0.2
+
+
+# Changing work directory
+setwd("/home/javier/Respaldo/Data Science Specialization/repositorios/Getting-and-Cleaning-Data")
+
+# Loading plyr library
+library(plyr)
+
+if("UCI HAR Dataset" %in% dir() == FALSE){
+  unzip("getdata-projectfiles-UCI HAR Dataset.zip")  
+}
+
 # 1. Merges the training and the test sets to create one data set.
 
 train.X.train <- read.table("./UCI HAR Dataset/train/X_train.txt")
@@ -38,22 +68,11 @@ write.table(clean.data, "clean_data.txt", row.names = FALSE)
 # 5. Creates a 2nd, independent tidy data set with the average of each variable
 #    for each activity and each subject.
 
+# Create the vector with the necessary fields for the grouping
+agrupacion <- c("subject", "activity")
 
+# Averages for groups                 
+result <- ddply(clean.data, agrupacion, numcolwise(mean))
 
-uniqueSubjects = unique(subject)[,1]
-numSubjects = length(unique(subject)[,1])
-numActivities = length(activities[,1])
-numCols = dim(clean.data)[2]
-result = clean.data[1:(numSubjects*numActivities), ]
-
-row = 1
-for (s in 1:numSubjects) {
-  for (a in 1:numActivities) {
-    result[row, 1] = uniqueSubjects[s]
-    result[row, 2] = activities[a, 2]
-    tmp <- clean.data[clean.data$subject==s & clean.data$activity==activities[a, 2], ]
-    result[row, 3:numCols] <- colMeans(tmp[, 3:numCols])
-    row = row+1
-  }
-}
-write.table(result, "data_averages.txt", , row.names = FALSE)
+# Write the result in a text file
+write.table(result, "data_set_with_the_averages.txt", row.names = FALSE)
