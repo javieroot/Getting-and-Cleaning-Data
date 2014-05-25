@@ -74,7 +74,11 @@ For each record in the dataset it is provided:
 #### Process Getting and Cleaning Data
 If you want to run the process on your pc , you should clone the repository and 
 run the file run_analysis.R considering that you must change the working 
-directory and have the plyr library installed. This analysis has only been 
+directory and have the plyr library installed. When you run the file 
+run_analisys.R clean_data.txt the files described above clean_data.txt and 
+data_set_with_the_averages.txt  will be generated.
+
+This process has only been 
 tested on the Fedora 20 operating system.
 For more details about the process you should see the book code and/or code 
 file run_analysis.R
