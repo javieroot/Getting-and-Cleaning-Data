@@ -1,7 +1,7 @@
 Getting and Cleaning Data Course Project
-========================================
+----------------------------------------
 
-# Introducction:
+### Introducction:
 This repository is intended to store the project (Peer Assessments) of the 
 course Getting and Cleaning Data part of the "Data Science" Specialization 
 through Coursera.
@@ -10,20 +10,21 @@ with, and clean a data set. The goal is to prepare tidy data that can be used
 for later analysis.
 
 
-# Abstract: 
+### Abstract: 
 Human Activity Recognition database built from the recordings of 30 
 subjects performing activities of daily living (ADL) while carrying a 
 waist-mounted smartphone with embedded inertial sensors. This data will be 
 prepared for further analysis using R.
 
 
-# Source:
-The original data [are](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+### Source:
+The original data [are](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
 With the [source](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-# Getting and Cleaning Data Course Project
+### Getting and Cleaning Data Course Project
 
-## This repository:
+#### This repository:
 As mentioned above this repository is intended to store the present project,
 contains the following files:
 
@@ -37,7 +38,7 @@ contains the following files:
 * data_set_with_the_averages.txt. A second, independent tidy data set with the 
   average of each variable for each activity and each subject
 
-## Data Set Information:
+#### Data Set Information:
 The experiments have been carried out with a group of 30 volunteers within an 
 age bracket of 19-48 years. Each person performed six activities (WALKING, 
 WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a 
@@ -60,7 +61,7 @@ by calculating variables from the time and frequency domain.
 Check the README.txt file for further details about this dataset.
 
 
-## Attribute Information:
+#### Attribute Information:
 For each record in the dataset it is provided: 
 - Triaxial acceleration from the accelerometer (total acceleration) and the 
   estimated body acceleration. 
@@ -70,7 +71,7 @@ For each record in the dataset it is provided:
 - An identifier of the subject who carried out the experiment.
 
 
-## Process Getting and Cleaning Data
+#### Process Getting and Cleaning Data
 If you want to run the process on your pc , you should clone the repository and 
 run the file run_analysis.R considering that you must change the working 
 directory and have the plyr library installed. This analysis has only been 
