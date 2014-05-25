@@ -9,6 +9,9 @@ treated here .
 
 ### The data cleanup script does the following: 
 
+Signals Inertial data are not considered because these are obtained from the
+treated here.
+
 1. The working directory is set
 
 2. We review whether the UCI HAR Dataset directory exists, if not exist that 
@@ -34,3 +37,8 @@ treated here .
    for each activity and each subject. Averaging is performed subject to 
    each activity.
 
+
+The following diagram summarizes how the data is organized between files 
+provided:
+
+![Summary chart](images/diagrama.jpg)
