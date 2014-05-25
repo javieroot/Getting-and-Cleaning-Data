@@ -1,7 +1,7 @@
 Getting and Cleaning Data Course Project
 ----------------------------------------
 
-### Introducction:
+### Introduction:
 This repository is intended to store the project (Peer Assessments) of the 
 course Getting and Cleaning Data part of the "Data Science" Specialization 
 through Coursera.
@@ -34,7 +34,8 @@ contains the following files:
 * getdata-projectfiles-UCI HAR Dataset.zip. Data set to tidy, see details of 
   the data set section
 * run_analysis.R. R script that processes the data
-* clean_data.txt. A tidy data set
+* clean_data.txt. The first tidy data set(only the measurements on the mean and
+  standard deviation for each measurement)
 * data_set_with_the_averages.txt. A second, independent tidy data set with the 
   average of each variable for each activity and each subject
 
@@ -75,11 +76,10 @@ For each record in the dataset it is provided:
 If you want to run the process on your pc , you should clone the repository and 
 run the file run_analysis.R considering that you must change the working 
 directory and have the plyr library installed. When you run the file 
-run_analisys.R clean_data.txt the files described above clean_data.txt and 
+run_analisys.R the files described above clean_data.txt and 
 data_set_with_the_averages.txt  will be generated.
 
-This process has only been 
-tested on the Fedora 20 operating system.
-For more details about the process you should see the book code and/or code 
-file run_analysis.R
+This process has only been tested on the Fedora 20 operating system. For more 
+details about the process you should see the book code and/or code file 
+run_analysis.R
 
