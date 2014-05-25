@@ -3,8 +3,6 @@ Code Book of Getting and Cleaning Data Course Project
 
 This is a code book that describes the variables, the data, and any 
 transformations or work that has been done to clean up the data.
-Signals Inertial data are not considered because these are obtained from the
-treated here .
 
 
 ### The data cleanup script does the following: 
@@ -41,4 +39,4 @@ treated here.
 The following diagram summarizes how the data is organized between files 
 provided:
 
-![Summary chart](images/diagrama.jpg)
+![Summary chart](images/diagrama.jpg, "Summary chart")
