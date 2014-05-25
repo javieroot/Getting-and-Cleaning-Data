@@ -1,3 +1,5 @@
+# The session information is displayed
+
 # > sessionInfo()
 # R version 3.0.2 (2013-09-25)
 # Platform: x86_64-redhat-linux-gnu (64-bit)
@@ -24,6 +26,10 @@ setwd("/home/javier/Respaldo/Data Science Specialization/repositorios/Getting-an
 # Loading plyr library
 library(plyr)
 
+
+# We review whether the UCI HAR Dataset directory exists, if not exist that 
+# directory, the getdata-projectfiles-UCI HAR Dataset.zip file is decompressed 
+# to obtain it because the data to work is contained in it
 if("UCI HAR Dataset" %in% dir() == FALSE){
   unzip("getdata-projectfiles-UCI HAR Dataset.zip")  
 }
