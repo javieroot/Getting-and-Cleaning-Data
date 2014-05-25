@@ -26,18 +26,19 @@ With the [source](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognit
 
 #### This repository:
 As mentioned above this repository is intended to store the present project,
-contains the following files:
+contains the following:
 
-* README.md. This flie
+* README.md. This file
 * CodeBook.md. This file describes the variables, the data, and any
   transformations or work that has been done to clean up the data.
-* getdata-projectfiles-UCI HAR Dataset.zip. Data set to tidy, see details of 
-  the data set section
+* getdata-projectfiles-UCI HAR Dataset.zip file. Data set to tidy, see details 
+  of the Data Set Information section
 * run_analysis.R. R script that processes the data
-* clean_data.txt. The first tidy data set(only the measurements on the mean and
-  standard deviation for each measurement)
-* data_set_with_the_averages.txt. A second, independent tidy data set with the 
-  average of each variable for each activity and each subject
+* clean_data.txt file. The first tidy data set(only the measurements on the 
+  mean and standard deviation for each measurement)
+* data_set_with_the_averages.txt file. A second, independent tidy data set with 
+  the average of each variable for each activity and each subject
+* images directory. Directory that contain the diagram of process
 
 #### Data Set Information:
 The experiments have been carried out with a group of 30 volunteers within an 
@@ -80,6 +81,6 @@ run_analisys.R the files described above clean_data.txt and
 data_set_with_the_averages.txt  will be generated.
 
 This process has only been tested on the Fedora 20 operating system. For more 
-details about the process you should see the book code and/or code file 
+details about the process you should see the CodeBook.md and/or code file 
 run_analysis.R
 
