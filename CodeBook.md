@@ -3,18 +3,17 @@ Code Book of Getting and Cleaning Data Course Project
 
 This is a code book that describes the variables, the data, and any 
 transformations or work that has been done to clean up the data.
-
 Signals Inertial data are not considered because these are obtained from the
 treated here .
 
 
 ### The data cleanup script does the following: 
 
-1. Se fija el directorio de trabajo
+1. The working directory is set
 
-2. Se revisa si el directorio UCI HAR Dataset existe, sino se descomprime el
-   archivo getdata-projectfiles-UCI HAR Dataset.zip para obtenerlo ya que 
-   contiene los datos a trabajar
+2. We review whether the UCI HAR Dataset directory exists, if not exist that 
+   directory, the getdata-projectfiles-UCI HAR Dataset.zip file is decompressed 
+   to obtain it because the data to work is contained in it
    
 3. Merges the training and the test sets to create one data set. Reads data 
    of X corresponding to train and test respectively, then the joint 
